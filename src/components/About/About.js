@@ -4,15 +4,15 @@ import Particle from "../Particle";
 import Github from "./Github";
 import Techstack from "./Techstack";
 import Aboutcard from "./AboutCard";
-import laptopImg from "../../Assets/about.png";
+import laptopImg from "../../Assets/habib.png";
 import Toolstack from "./Toolstack";
 
 function About() {
   return (
     <Container fluid className="about-section">
       <Particle />
-      <Container>
-        <Row style={{ justifyContent: "center", padding: "10px" }}>
+      <Container style={{ padding: "0px" }}>
+        <Row style={{ justifyContent: "center", padding: "0px" }}>
           <Col
             md={7}
             style={{
@@ -24,14 +24,14 @@ function About() {
             <h1 style={{ fontSize: "2.1em", paddingBottom: "20px" }}>
               Know Who <strong className="purple">I'M</strong>
             </h1>
-            <Aboutcard />
+            <Aboutcard/>
           </Col>
           <Col
             md={5}
             style={{ paddingTop: "120px", paddingBottom: "50px" }}
             className="about-img"
           >
-            <img src={laptopImg} alt="about" className="img-fluid" />
+            <img src={laptopImg} alt="about" className="img-fluid" style={{ width: '240px', height: '240px' }} />
           </Col>
         </Row>
         <h1 className="project-heading">
@@ -40,12 +40,12 @@ function About() {
 
         <Techstack />
 
-        <h1 className="project-heading">
-          <strong className="purple">Tools</strong> I use
-        </h1>
-        <Toolstack />
+        {/* <h1 className="project-heading">
+          <strong className="purple">Soft</strong> Skills
+        </h1> */}
+        {/* <Toolstack /> */}
 
-        <Github />
+        {/* <Github /> */}
       </Container>
     </Container>
   );

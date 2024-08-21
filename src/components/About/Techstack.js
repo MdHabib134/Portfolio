@@ -1,70 +1,53 @@
 import React from "react";
-import { Col, Row } from "react-bootstrap";
-import { CgCPlusPlus } from "react-icons/cg";
-import {
-  DiJavascript1,
-  DiReact,
-  DiNodejs,
-  DiMongodb,
-  DiPython,
-  DiGit,
-  DiJava,
-} from "react-icons/di";
-import {
-  SiRedis,
-  SiFirebase,
-  SiNextdotjs,
-  SiSolidity,
-  SiPostgresql,
-} from "react-icons/si";
-import { TbBrandGolang } from "react-icons/tb";
 
 function Techstack() {
   return (
-    <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
-      <Col xs={4} md={2} className="tech-icons">
-        <CgCPlusPlus />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <DiJavascript1 />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <TbBrandGolang />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <DiNodejs />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <DiReact />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <SiSolidity />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <DiMongodb />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <SiNextdotjs />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <DiGit />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <SiFirebase />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <SiRedis />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <SiPostgresql />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <DiPython />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <DiJava />
-      </Col>
-    </Row>
+    <div className="techstack-container">
+      <div className="tech-section">
+        <h2>Technical Skills</h2>
+        <ul>
+          <li>Programming Language: Python, Typescript, JavaScript, HTML, CSS, C#, .NET</li>
+          <li>Framework: Angular, React, Django, Flask, SCSS</li>
+          <li>SQL: MySQL, Oracle, PostgreSQL</li>
+          <li>Network Security: CCNA, CCNP, NMAP, Aircrack-ng, Metasploit</li>
+          <li>Testing: BurpSuite, PyTest, OWASP ZAP, Wireshark, Nessus</li>
+          <li>APIs: Web API, REST API</li>
+          <li>Version Control: Git, GitHub</li>
+          <li>Data Analysis: Pandas, NumPy</li>
+          <li>Machine Learning: OpenCV, Scikit-learn, TensorFlow, PyTorch</li>
+          <li>Data Visualization: MatPlotlib, Power BI</li>
+        </ul>
+      </div>
+      <div className="tech-section">
+        <h2>Tools</h2>
+        <ul>
+          <li>IDEs and Editors: Visual Studio Code, NetBeans, Jupyter Notebook, PyCharm, Google Colab</li>
+          <li>Database Tools: SQL Server Management Studio, phpMyAdmin</li>
+          <li>Project Management: Jira, Trello</li>
+          <li>API Testing: Swagger</li>
+          <li>Designing: Figma, Balsamiq</li>
+          <li>Communication: Microsoft Teams, Slack</li>
+          <li>Productivity: Microsoft Office, OneNote, Google Docs</li>
+        </ul>
+      </div>
+      <div className="tech-section">
+        <h2>Soft Skills</h2>
+        <ul>
+          <li>Problem Solving</li>
+          <li>Fast Learner</li>
+          <li>Adaptability</li>
+          <li>Analytical</li>
+          <li>Critical Thinking</li>
+          <li>Attention to Details</li>
+          <li>Time Management</li>
+          <li>Ability to Work in a Team</li>
+          <li>Good Communication</li>
+          <li>Ability to Work Under Pressure</li>
+          <li>Customer Service</li>
+          <li>Leadership</li>
+        </ul>
+      </div>
+    </div>
   );
 }
 

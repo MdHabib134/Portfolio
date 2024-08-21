@@ -20,9 +20,9 @@ function Home() {
                 </span>
               </h1>
 
-              <h1 className="heading-name">
-                I'M
-                <strong className="main-name"> SOUMYAJIT BEHERA</strong>
+              <h1  className="heading-name" >
+              Meet the one who may not be the best, but who will always gives his best, 
+                <strong className="main-name"> Md Habib Sarker</strong>
               </h1>
 
               <div style={{ padding: 50, textAlign: "left" }}>

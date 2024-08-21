@@ -10,23 +10,18 @@ import {
 
 function Toolstack() {
   return (
-    <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
-      <Col xs={4} md={2} className="tech-icons">
-        <SiMacos />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <SiVisualstudiocode />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <SiPostman />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <SiSlack />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <SiVercel />
-      </Col>
-    </Row>
+    <div className="tech-section">
+        <h2>Tools</h2>
+        <ul>
+          <li>IDEs and Editors: Visual Studio Code, NetBeans, Jupyter Notebook, PyCharm, Google Colab</li>
+          <li>Database Tools: SQL Server Management Studio, phpMyAdmin</li>
+          <li>Project Management: Jira, Trello</li>
+          <li>API Testing: Swagger</li>
+          <li>Designing: Figma, Balsamiq</li>
+          <li>Communication: Microsoft Teams, Slack</li>
+          <li>Productivity: Microsoft Office, OneNote, Google Docs</li>
+        </ul>
+      </div>
   );
 }
 

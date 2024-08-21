@@ -251,7 +251,7 @@ button:focus {
 }
 
 .home-header {
-  padding-top: 80px !important;
+  padding-top: 70px !important;
 }
 
 .home-section {
@@ -260,8 +260,9 @@ button:focus {
   background-image: var(--image-gradient), url(./Assets/home-bg.jpg);
   background-position: top center;
   background-repeat: no-repeat;
-  padding-bottom: 30px !important;
-  padding-top: 30px !important;
+  padding-bottom: 0px !important;
+  padding-top: 0px !important;
+  margin-bottom: 0px;
 }
 
 .home-content {
@@ -276,12 +277,15 @@ button:focus {
 }
 
 .heading-name {
-  font-size: 2.5em !important;
-  padding-left: 45px !important;
+  font-size: 1.7em ;
+  padding-left: 45px ;
+  color: #cd5ff8;
+
 }
 
 .main-name {
-  color: #cd5ff8;
+  color: white;
+  font-size: 1.2em ;
 }
 
 .Typewriter__wrapper {
@@ -307,7 +311,7 @@ button:focus {
 
 .myAvtar {
   justify-content: center !important;
-  padding-top: 9em !important;
+  padding-top: 7em !important;
 }
 
 @media (max-width: 767px) {
@@ -320,12 +324,13 @@ button:focus {
 .home-about-section {
   position: relative;
   padding-bottom: 70px !important;
-  padding-top: 70px !important;
+  padding-top: 0px !important;
+  margin-top: 0px;
 }
 
 .home-about-description {
   color: white !important;
-  padding-top: 100px !important;
+  padding-top: 0px !important;
   padding-bottom: 20px !important;
   text-align: center;
 }
@@ -740,4 +745,69 @@ button:focus {
 }
 .fork-btn-inner::after {
   display: none !important;
+}
+
+
+
+
+
+
+/* .................................................... */
+/* Full-width container for tech stack */
+.techstack-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  box-sizing: border-box; /* Include padding and borders in width calculation */
+  padding: 0; /* Remove padding */
+  margin: 0; /* Remove margin */
+}
+
+/* Section styles */
+.tech-section {
+  width: 33%; /* Adjusted width to fit three sections evenly */
+  font-size: 1.2em;
+  margin: 10px; /* Adjust margin as needed */
+  padding: 15px;
+  border: 1.7px solid rgba(200, 137, 230, 0.637);
+  border-radius: 5px;
+  box-shadow: 4px 5px 4px 3px rgba(89, 4, 168, 0.137);
+  opacity: 0.93;
+  transition: all 0.4s ease; /* Smooth transition for all properties */
+  text-align: left;
+  font-size: 17px;
+}
+
+/* Hover effect to transition the shadow */
+.tech-section:hover {
+  box-shadow: 8px 10px 10px 5px rgba(89, 4, 168, 0.3); /* Increased shadow size and intensity on hover */
+  transform: scale(1.05) !important;
+  overflow: hidden !important;
+  border: 2.2px solid rgba(197, 115, 230, 0.883) !important;
+}
+
+/* Heading styles */
+.tech-section h2 {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+/* List styles */
+.tech-section ul {
+  list-style-type: disc; /* Adds bullet points */
+  padding-left: 20px; /* Adds spacing before the list items */
+  line-height: 1.6; /* Ensures each line has enough spacing */
+}
+
+/* List item styles */
+.tech-section li {
+  margin-bottom: 10px;
+}
+
+/* Ensure full viewport width for the container */
+.custom-container {
+  padding: 0;
+  margin: 0;
+  width: 100vw; /* Ensure full viewport width */
+  box-sizing: border-box; /* Include padding and border in element's total width and height */
 }
